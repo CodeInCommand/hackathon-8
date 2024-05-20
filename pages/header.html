@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page Header</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Helvatica, sans-serif;
+      }
+
+      header {
+        background-color: #942873;
+        color: white;
+        padding: 10px;
+      }
+
+      .logo img {
+        max-width: 100px;
+      }
+
+      nav {
+        background-color: #942873; /* Purple */
+        color: white;
+        padding: 10px;
+      }
+
+      nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        text-align: right;
+      }
+
+      nav ul li {
+        float: none;
+        display: inline-block;
+      }
+
+      nav ul li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      nav ul li a:hover {
+        background-color: #8c266e; /* Darker Purple */
+      }
+      nav ul li a:hover {
+  --hover-shadows: 16px 16px 33px #f3ecec, -16px -16px 33px #e9e4e4;
+  --accent: fuchsia;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  border: none;
+  border-radius: 1.1em;
+  background-color: #942873;
+  cursor: pointer;
+  color: white;
+  padding: 1em 2em;
+  transition: box-shadow ease-in-out 0.3s, background-color ease-in-out 0.1s,
+    letter-spacing ease-in-out 0.1s, transform ease-in-out 0.1s;
+    text-decoration: underline;
+  
+}
+
+button:active {
+  box-shadow: var(--hover-shadows), var(--accent) 0px 0px 30px 5px;
+  background-color: var(--accent);
+  transform: scale(0.95);
+}
+      .navbar-toggle {
+        display: none;
+        cursor: pointer;
+      }
+
+      @media (max-width: 768px) {
+        .navbar {
+          display: none;
+          flex-direction: column;
+          padding-top: 10px;
+        }
+
+        .navbar.show {
+          display: block;
+        }
+
+        .navbar-toggle {
+          display: block;
+          margin-right: 10px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <a href="#">
+            <img src="https://via.placeholder.com/100x80" alt="Logo">
+        </a>
+        </div>
+        <div class="navbar-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="donations.html">Donations</a></li>
+          <li><a href="mediagallery.html">Media Gallery</a></li>
+          <li><a href="https://app.slack.com/client/T06PX7TG1B4/C06PQJJTHFY" target="_blank">Chat</a></li>
+          <li><a href="expenses.html">Expenses</a></li>
+          <li><a href="support-ticket.html">Support Ticket</a></li>
+          <li><a href="login.html">Login</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <script>
+      // JavaScript code here if needed
+    </script>
+  </body>
+</html>

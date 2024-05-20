@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Gallery</title>
+    <link rel="stylesheet" href="/styles/media-gallery.css" />
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.png">
+  </head>
+  <body>
+    <div class="app">
+      <div class="header">
+        <h1>Media Gallery</h1>
+        <!-- Example sorting buttons -->
+        <!-- <div class="sort-buttons">
+          <button class="sort-option" data-sort-by="date">Sort by Date</button>
+          <button class="sort-option" data-sort-by="name">Sort by Name</button>
+          <button class="sort-option" data-sort-by="size">Sort by Size</button>
+        </div> -->
+        <label for="sort">Sort by:</label>
+<select id="sort" name="sort">
+  <option value="Date">Date</option>
+  <option value="Name">Name</option>
+  <option value="Size">Size</option>
+  <option value="Place">Place</option>
+</select>
+      </div>
+      <div class="gallery-container">
+        <div class="gallery">
+          <!-- Placeholder images for demonstration -->
+          <div class="gallery-item" data-date="2022-01-15">
+            <img
+              src="https://via.placeholder.com/400x300?text=Image+1"
+              alt="Image 1"
+            />
+          </div>
+          <div class="gallery-item" data-date="2022-02-20">
+            <img
+              src="https://via.placeholder.com/400x300?text=Image+2"
+              alt="Image 2"
+            />
+          </div>
+          <div class="gallery-item" data-date="2022-03-10">
+            <img
+              src="https://via.placeholder.com/400x300?text=Image+3"
+              alt="Image 3"
+            />
+          </div>
+          <div class="gallery-item" data-date="2022-04-05">
+            <img
+              src="https://via.placeholder.com/400x300?text=Image+4"
+              alt="Image 4"
+            />
+          </div>
+          <div class="gallery-item" data-date="2022-05-12">
+            <img
+              src="https://via.placeholder.com/400x300?text=Image+5"
+              alt="Image 5"
+            />
+          </div>
+          <!-- Add more gallery items with different placeholder images -->
+          <div class="gallery-item" data-date="2022-06-20">
+            <img
+              src="https://via.placeholder.com/400x300?text=Image+6"
+              alt="Image 6"
+            />
+          </div>
+          <div class="gallery-item" data-date="2022-07-01">
+            <img
+              src="https://via.placeholder.com/400x300?text=Image+7"
+              alt="Image 7"
+            />
+          </div>
+          <div class="gallery-item" data-date="2022-08-15">
+            <img
+              src="https://via.placeholder.com/400x300?text=Image+8"
+              alt="Image 8"
+            />
+          </div>
+          <div class="gallery-item" data-date="2022-09-30">
+            <img
+              src="https://via.placeholder.com/400x300?text=Image+9"
+              alt="Image 9"
+            />
+          </div>
+          <div class="gallery-item" data-date="2022-10-10">
+            <img
+              src="https://via.placeholder.com/400x300?text=Image+10"
+              alt="Image 10"
+            />
+          </div>
+          <!-- Add more gallery items as needed -->
+        </div>
+      </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/yourfontawesomekey.js"></script>
+    <script src="/scripts/media-gallery.js"></script>
+    <script src="/scripts/header.js"></script>
+  </body>
+</html>

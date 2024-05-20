@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Customer Page</title>
+      <link rel="stylesheet" href="/styles/customer.css">
+      <link rel="icon" type="image/x-icon" href="/assets/favicon.png">
+   </head>
+   <body>
+      <div class="container">
+         <br>
+         <h1>Donator List</h1>
+         <table id="customerTable">
+            <thead>
+               <tr>
+                  <th>Donator/Organisation Name</th>
+                  <th>Donation</th>
+                  <th>Actions</th>
+               </tr>
+            </thead>
+            <tbody id="customerList">
+               <!-- Customer rows will be added here dynamically -->
+            </tbody>
+         </table>
+         <form id="customerForm">
+            <label for="customerName">Donator Name:</label>
+            <input type="text" id="customerName" required>
+            <label for="donationAmount">Donation Amount:</label>
+            <input type="number" id="donationAmount" required>
+            <button type="submit">Add Donator</button>
+         </form>
+      </div>
+      <script src="/scripts/customer.js"></script>
+      <script src="/scripts/header.js"></script>
+   </body>
+</html>
